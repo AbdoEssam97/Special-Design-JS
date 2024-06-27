@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="Css/normalize.css" />
+    <link rel="stylesheet" href="Css/all.min.css" />
+
+    <!-- Awesome File -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- BootStrap File -->
+    <link rel="stylesheet" href="Css/bootstrap/bootstrap.min.css" />
+
+    <!-- Css Sheets -->
+    <link rel="stylesheet" href="Css/index.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Miniver&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Special Design</title>
+  </head>
+
+  <body>
+    <!-- Start Settings Box -->
+    <div class="settings-box">
+      <div class="toggle-settings">
+        <i class="fa fa-gear"></i>
+      </div>
+      <div class="settings-container">
+        <div class="option-box">
+          <h4>Colors</h4>
+          <ul class="colors-list">
+            <li class="active" data-color="#FF9800"></li>
+            <li data-color="#E91E63"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#03A9F4"></li>
+            <li data-color="#4CAF50"></li>
+            <li data-color="#ff99ff"></li>
+          </ul>
+        </div>
+        <div class="option-box">
+          <h4>Backgrounds Options</h4>
+          <div class="random-backgrounds">
+            <span class="yes active" data-background="yes">Yes</span>
+            <span class="no" data-background="no">No</span>
+          </div>
+        </div>
+        <div class="option-box">
+          <h4>Show Bullets</h4>
+          <div class="bullets-option">
+            <span class="yes active" data-display="show">Yes</span>
+            <span class="no" data-display="hide">No</span>
+          </div>
+        </div>
+        <button class="reset-options">Reset Options</button>
+      </div>
+    </div>
+    <!-- End Settings Box -->
+
+    <!-- Start Nav Bullets -->
+    <div class="nav-bullets">
+      <div class="bullet" data-section=".about-us">
+        <div class="tooltip">About Us</div>
+      </div>
+      <div class="bullet" data-section=".skills">
+        <div class="tooltip">Our Skills</div>
+      </div>
+      <div class="bullet" data-section=".gallery">
+        <div class="tooltip">Our Gallery</div>
+      </div>
+      <div class="bullet" data-section=".timeline">
+        <div class="tooltip">Timeline</div>
+      </div>
+      <div class="bullet" data-section=".features">
+        <div class="tooltip">Features</div>
+      </div>
+      <div class="bullet" data-section=".testimonials">
+        <div class="tooltip">Testimonials</div>
+      </div>
+    </div>
+    <!-- End Nav Bullets -->
+
+    <!-- Start Landing Page -->
+    <div class="landing-page">
+      <div class="overlay"></div>
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container">
+          <a class="logo navbar-brand" href="#">Special&Design</a>
+          <div class="navbar-toggler border-0" type="button">
+            <i
+              class="fa-solid fa-bars"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
+            ></i>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" data-section=".about-us"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-section=".skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-section=".gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-disabled="true"
+                  data-section=".timeline"
+                  >Timeline</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-disabled="true"
+                  data-section=".features"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-disabled="true"
+                  data-section=".testimonials"
+                  >Testimonials</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="introduction-text">
+        <h1>We Are <span>Creative</span> Agency</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          odit nihil ullam nesciunt quidem iste
+        </p>
+      </div>
+      <div
+        class="offcanvas offcanvas-end w-25 d-md-none"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header ms-auto">
+          <button
+            type="button"
+            class="btn-close btn btn-danger"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body text-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" data-section=".about-us"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-section=".skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-section=".gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-section=".timeline">Timeline</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-section=".features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-section=".testimonials"
+                >Testimonials</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Landing Page -->
+
+    <!-- Start About Us -->
+    <div class="container">
+      <div class="row about-us pt-5 pb-5">
+        <div class="col-md-8 info-box">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            ipsum, tenetur dolores esse magni ratione distinctio! Quod iusto
+            neque fuga, maxime quos nostrum quibusdam dicta deserunt blanditiis
+            non voluptate id?
+          </p>
+        </div>
+        <div class="col-md-4 image-box">
+          <img src="imgs/about-us.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End About Us -->
+
+    <!-- Start Our Skills -->
+    <div class="skills pt-5 pb-5">
+      <div class="container">
+        <h2>Our Skills</h2>
+        <div class="skill-box">
+          <div class="skill-name">HTML</div>
+          <div class="skill-progress">
+            <span data-progress="80%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">CSS</div>
+          <div class="skill-progress">
+            <span data-progress="70%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-progress">
+            <span data-progress="90%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">Python</div>
+          <div class="skill-progress">
+            <span data-progress="80%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">PHP</div>
+          <div class="skill-progress">
+            <span data-progress="90%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">MySQL</div>
+          <div class="skill-progress">
+            <span data-progress="70%"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Our Skills -->
+
+    <!-- Start Gallery -->
+    <div class="gallery pt-5 pb-5">
+      <div class="container">
+        <h2>Our Gallery</h2>
+        <div class="images-box">
+          <img src="./image/01.jpg" alt="Image One" />
+          <img src="./image/02.jpg" alt="Image Two" />
+          <img src="./image/03.jpg" alt="Image Three" />
+          <img src="./image/04.jpg" alt="Image Four" />
+          <img src="./image/05.jpg" alt="Image Five" />
+          <img src="./image/06.png" alt="Image Six" />
+          <img src="./image/07.jpg" alt="Image Seven" />
+          <img src="./image/08.jpg" alt="Image eight" />
+          <img src="./image/09.jpg" alt="Image Nine" />
+          <img src="./image/10.jpg" alt="Image ten" />
+          <img src="./image/11.jpg" alt="" />
+          <img src="./image/12.jpg" alt="" />
+          <img src="./image/13.jpg" alt="" />
+          <img src="./image/14.jpg" alt="" />
+          <img src="./image/15.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End Gallery -->
+
+    <!-- Start Timeline -->
+    <div class="timeline pt-5 pb-5">
+      <div class="container">
+        <div class="timeline-content">
+          <div class="year">2018</div>
+          <div class="left">
+            <div class="content">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="right">
+            <div class="content">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="year">2016</div>
+          <div class="left">
+            <div class="content">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="left">
+            <div class="content">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Timeline -->
+
+    <!-- Start Features -->
+    <div class="features pt-5 pb-5">
+      <h2>Our Features</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 feat-box">
+            <img src="./image/programming.svg" alt="" />
+            <h4>Development</h4>
+            <p>
+              We are professional marketeers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+          <div class="col-md-4 feat-box">
+            <img src="./image/advertising.svg" alt="" />
+            <h4>Marketing</h4>
+            <p>
+              We are professional marketeers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+          <div class="col-md-4 feat-box">
+            <img src="./image/hosting-icon.svg" alt="" />
+            <h4>Hosting</h4>
+            <p>
+              We are professional marketeers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+          <div class="col-md-4 feat-box">
+            <img src="./image/mobile-app.svg" alt="" />
+            <h4>Mobile Develope</h4>
+            <p>
+              We are professional marketeers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+          <div class="col-md-4 feat-box">
+            <img src="./image/graphic-design.svg" alt="" />
+            <h4>Cloud and Servers</h4>
+            <p>
+              We are professional marketeers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+          <div class="col-md-4 feat-box">
+            <img src="./image/web-design.svg" alt="" />
+            <h4>Seo</h4>
+            <p>
+              We are professional marketeers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+          <!-- <div class="clearfix"></div> -->
+        </div>
+      </div>
+    </div>
+    <!-- End Features -->
+
+    <!-- Start Testimonials -->
+    <div class="testimonials pt-5 pb-5">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="row">
+          <div class="ts-box col-md-4 col-sm-6">
+            <p>
+              Iam very happy with the product its amazing and i recieve it very
+              fast and the price was amazing.
+            </p>
+            <div class="person-info">
+              <img src="./image/Icon_06.png" alt="" />
+              <h4>Ahmed Mosaad</h4>
+              <p>CEO At Company</p>
+            </div>
+          </div>
+          <div class="ts-box col-md-4 col-sm-6">
+            <p>
+              Iam very happy with the product its amazing and i recieve it very
+              fast and the price was amazing.
+            </p>
+            <div class="person-info">
+              <img src="./image/Icon_05.png" alt="" />
+              <h4>Mohamed Ibrahim</h4>
+              <p>CEO At Company</p>
+            </div>
+          </div>
+          <div class="ts-box col-md-4 col-sm-6">
+            <p>
+              Iam very happy with the product its amazing and i recieve it very
+              fast and the price was amazing.
+            </p>
+            <div class="person-info">
+              <img src="./image/Icon_04.png" alt="" />
+              <h4>Sherief Ashraf</h4>
+              <p>CEO At Company</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- Start Contact Us -->
+    <div class="contact pt-5 pb-5">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="" class="row">
+          <div class="left col-6">
+            <input type="text" placeholder="Your Name" name="username" />
+            <input type="text" placeholder="Your Phone" name="phone" />
+            <input type="email" placeholder="Your Email" name="email" />
+            <input type="text" placeholder="Subject" name="subject" />
+          </div>
+          <div class="right col-6">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact Us -->
+
+    <!-- Start Footer -->
+    <div class="footer">Created With Love By <span>BN-ESSAM</span></div>
+    <!-- End Footer -->
+
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
